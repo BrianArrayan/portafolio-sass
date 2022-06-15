@@ -1,0 +1,82 @@
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-duration: .3s;
+    #menu-icon{
+        font-size: 32px;
+        color: white;
+        z-index: 10001;
+        cursor: pointer;
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        li{
+            position: relative;
+            list-style: none;
+        }
+        a{
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        i{
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            margin-right: 5px;
+        }
+        a::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: $bg-celeste;
+            left: 0;
+            bottom: -4px;
+            transition: ease .40s;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+
+    }
+}
+section{
+	padding: 120px 15%;
+	color: white;
+    .home-text h1{
+        margin: 20px 0px 20px;
+        font-size: 5rem;
+        span{
+            color: $bg-celeste;
+        }
+        h3{
+            font-size: 25px;
+            margin-bottom: 55px;
+        }
+        h4{
+            color: #585c63;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+}
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @extend %grid-home;
+}

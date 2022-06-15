@@ -1,0 +1,43 @@
+.skills{
+    background-color: black;
+    .center{
+        text-align: center;
+        h2{
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+    }
+    .skills-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+        grid-gap: 2rem;
+        align-items: center;
+        margin-top: 4.5rem;
+        .row{
+            background-color: $bg-gris;
+            padding: 55px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .35s;
+        }
+        .row i{
+            color: white;
+            margin-bottom: 20px;
+            font-size: 2.7rem;
+        }
+        .row h3{
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .row p{
+            color: #585c63;
+            line-height: 30px;
+            font-size: 15px;
+        }
+        .row:hover{
+            transform: translateY(-8px);
+        }
+    }
+}

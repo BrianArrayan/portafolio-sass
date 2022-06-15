@@ -1,0 +1,87 @@
+@media (max-width: 1270px){
+	header{
+		padding: 18px 4%;
+		transition: .2s;
+	}
+	section{
+		padding: 80px 4%;
+		transition: .2s;
+	}
+    .home{
+        background: none;
+        background-image: url(../img/background-negro.jpg);
+    }
+	.home-text h1{
+		text-align: center;
+	}
+	.home-text h4{
+		text-align: center;
+	}
+	.home-text h3{
+		text-align: center;
+	}
+}
+@media (max-width: 990px){
+	.inicio{
+		height: 85vh;
+	}
+	#menu-icon{
+		display: initial;
+	}
+	.navbar{
+		position: absolute;
+		top: -700px;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: $bg-gris;
+		text-align: left;
+		transition: all .30s;
+	}
+	.navbar a{
+		display: block;
+		padding: 1.1rem;
+		margin: 1.3rem;
+		border-left: 2px solid #585c63;
+	}
+	.navbar a:hover{
+		background: $bg-celeste;
+	}
+	.navbar a::after{
+		display: none;
+	}
+	.navbar.active{
+		top: 100%;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.about-img img{
+		max-width: 100%;
+		width: 700px;
+		height: auto;
+	}
+	.contacto{
+		grid-template-columns: 1fr;
+	}
+	.contacto-img{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+    .contact-foto{
+		width: 350px;
+		height: 450px;
+	}
+	.contacto-form{
+		order: 2;
+	}
+	.box img{
+		max-width: 100%;
+		width: 760px;
+		height: auto;
+	}
+}

@@ -1,0 +1,28 @@
+.portafolio{
+	background: $bg-gris;
+    .center{
+        text-align: center;
+        h2{
+            @include h2-portafolio(3rem)
+        }
+    }
+    .portafolio-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+        grid-gap: 2rem;
+        align-items: center;
+        margin-top: 4.5rem;
+        cursor: pointer;
+        .box img{
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all .30s;
+        }
+        .box :hover{
+            transform: scale(1.1);
+        }
+    }
+}

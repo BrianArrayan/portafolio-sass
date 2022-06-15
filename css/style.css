@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  font-family: open Sans;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  scroll-padding-top: 3.5rem; }
+.home {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center; }
+
+.about .btn:hover {
+  border: 2px solid #585c63;
+  background: transparent; }
 
 header {
   position: fixed;
@@ -78,10 +78,7 @@ section {
   background: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center; }
+  position: relative; }
 
 .about {
   background: #191919;
@@ -93,7 +90,8 @@ section {
     max-width: 100%;
     width: 500px;
     height: auto;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: 3px solid #52DFDA; }
   .about .about-text h2 {
     font-size: 3rem;
     margin-bottom: 20px; }
@@ -113,9 +111,7 @@ section {
     border-radius: 30px;
     transition: ease .35s; }
   .about .btn:hover {
-    transform: translateY(-8px);
-    border: 2px solid #585c63;
-    background: transparent; }
+    transform: translateY(-8px); }
 
 .center {
   text-align: center; }
@@ -163,8 +159,7 @@ section {
   .portafolio .center {
     text-align: center; }
     .portafolio .center h2 {
-      font-size: 3rem;
-      margin-bottom: 15px; }
+      font-size: 3rem; }
   .portafolio .portafolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, auto));
@@ -247,7 +242,16 @@ section {
     transition: .2s; }
   section {
     padding: 80px 4%;
-    transition: .2s; } }
+    transition: .2s; }
+  .home {
+    background: none;
+    background-image: url(../img/background-negro.jpg); }
+  .home-text h1 {
+    text-align: center; }
+  .home-text h4 {
+    text-align: center; }
+  .home-text h3 {
+    text-align: center; } }
 
 @media (max-width: 990px) {
   .inicio {
@@ -288,9 +292,21 @@ section {
   .contacto-img {
     text-align: center;
     margin-bottom: 25px; }
+  .contact-foto {
+    width: 350px;
+    height: 450px; }
   .contacto-form {
     order: 2; }
   .box img {
     max-width: 100%;
     width: 760px;
     height: auto; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: open Sans;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem; }

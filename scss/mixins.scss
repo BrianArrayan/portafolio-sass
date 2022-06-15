@@ -1,0 +1,7 @@
+@mixin border ($valor) {
+    border: $valor;
+}
+
+@mixin h2-portafolio ($valor) {
+    font-size: $valor;
+}
