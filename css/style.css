@@ -71,6 +71,23 @@ section {
       color: #585c63;
       font-size: 20px;
       letter-spacing: 2px; }
+  section .redes {
+    display: flex;
+    margin-top: 30px; }
+    section .redes article {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #52DFDA;
+      margin: 5px;
+      transition: all .30s; }
+    section .redes article:hover {
+      transform: scale(1.1); }
+    section .redes .logo-redes {
+      width: 30px;
+      height: 30px;
+      margin-left: 5px;
+      margin-top: 5px; }
 
 .home {
   height: 100vh;
@@ -251,7 +268,10 @@ section {
   .home-text h4 {
     text-align: center; }
   .home-text h3 {
-    text-align: center; } }
+    text-align: center; }
+  .redes {
+    display: flex;
+    justify-content: center; } }
 
 @media (max-width: 990px) {
   .inicio {

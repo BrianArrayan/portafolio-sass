@@ -1,14 +1,14 @@
-@import 'extend.scss';
-@import 'mixins.scss';
-@import 'variables';
-@import 'fuentes';
-@import 'home';
-@import 'sobre-mi';
-@import 'skill';
-@import 'portafolio';
-@import 'contacto';
-@import 'footer';
-@import 'media-querys';
+@import '../scss/base/extend.scss';
+@import '../scss/base/mixins.scss';
+@import '../scss/base/variables.scss';
+@import '../scss/base/fuentes.scss';
+@import '../scss/componentes/home';
+@import '../scss/componentes/sobre-mi';
+@import '../scss/componentes/skill';
+@import '../scss/componentes/portafolio';
+@import '../scss/componentes/contacto';
+@import '../scss/componentes/footer';
+@import '../scss/componentes/media-querys.scss';
 
 
 

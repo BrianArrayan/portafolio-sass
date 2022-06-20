@@ -70,6 +70,27 @@ section{
             letter-spacing: 2px;
         }
 }
+    .redes{
+        display: flex;
+        margin-top: 30px;
+    article{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $bg-celeste;
+        margin: 5px;
+        transition: all .30s;
+    }
+    article:hover{
+        transform: scale(1.1);
+    }
+    .logo-redes{
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    }
 }
 .home{
     height: 100vh;
