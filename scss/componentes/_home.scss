@@ -8,13 +8,6 @@ header{
 	align-items: center;
 	justify-content: center;
 	transition-duration: .3s;
-    #menu-icon{
-        font-size: 32px;
-        color: white;
-        z-index: 10001;
-        cursor: pointer;
-        display: none;
-    }
     .navbar{
         display: flex;
         li{
@@ -22,12 +15,12 @@ header{
             list-style: none;
         }
         a{
+            display: flex;
+            justify-content: center;
             color: white;
             font-weight: bold;
             font-size: 1rem;
             padding: 10px 20px;
-            display: flex;
-            justify-content: center;
         }
         i{
             width: 20px;
@@ -48,9 +41,16 @@ header{
         a:hover::after{
             width: 100%;
         }
-
     }
 }
+#menu-icon{
+    font-size: 32px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
 section{
 	padding: 120px 15%;
 	color: white;

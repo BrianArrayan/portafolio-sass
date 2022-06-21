@@ -21,24 +21,18 @@ header {
   align-items: center;
   justify-content: center;
   transition-duration: .3s; }
-  header #menu-icon {
-    font-size: 32px;
-    color: white;
-    z-index: 10001;
-    cursor: pointer;
-    display: none; }
   header .navbar {
     display: flex; }
     header .navbar li {
       position: relative;
       list-style: none; }
     header .navbar a {
+      display: flex;
+      justify-content: center;
       color: white;
       font-weight: bold;
       font-size: 1rem;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center; }
+      padding: 10px 20px; }
     header .navbar i {
       width: 20px;
       height: 20px;
@@ -55,6 +49,13 @@ header {
       transition: ease .40s; }
     header .navbar a:hover::after {
       width: 100%; }
+
+#menu-icon {
+  font-size: 32px;
+  color: white;
+  z-index: 10001;
+  cursor: pointer;
+  display: none; }
 
 section {
   padding: 120px 15%;
@@ -291,7 +292,8 @@ section {
     display: block;
     padding: 1.1rem;
     margin: 1.3rem;
-    border-left: 2px solid #585c63; }
+    border-left: 2px solid #585c63;
+    border-right: 2px solid #585c63; }
   .navbar a:hover {
     background: #52DFDA; }
   .navbar a::after {
